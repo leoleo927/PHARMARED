@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib>
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.0</jspversion>
+	<shortname>tools</shortname>
+	<tag>
+		<name>cabecera</name>
+		<tagclass>etiquetas.CabeceraTag</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>Muestra la cabecera del proyecto</info>
+		
+		<attribute>
+			<name>tituloPagina</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>menuPrincipal</name>
+		<tagclass>etiquetas.MenuPrincipalTag</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>Muestra las opciones del menu pricipal</info>
+
+		<attribute>
+			<name>tipo</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>nombre</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>apellido</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<!-- otras etiquetas de la librería -->
+
+	<tag>
+		<name>usuarioLista</name>
+		<tagclass>etiquetas.UsuarioListaTag</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>Muestra la lista de usuarios</info>
+	</tag>
+	
+	<tag>
+		<name>comboUsuTipo</name>
+		<tagclass>etiquetas.ComboUsuarioTipoTag</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>Muestra las opciones del combo de tipo de usuario</info>
+		
+		<attribute>
+			<name>tipo</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>productoLista</name>
+		<tagclass>etiquetas.ProductoListaTag</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>Muestra la lista productos</info>
+	</tag>
+	
+	<tag>
+		<name>comboProdCat</name>
+		<tagclass>etiquetas.ComboProductoCategoriaTag</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>Muestra las opciones del combo de categoria de producto</info>
+		<attribute>
+			<name>idCategoria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>productoCatalogo</name>
+		<tagclass>etiquetas.ProductoCatalogoTag</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>Muestra las opciones del catalogo de productos</info>
+		
+		<attribute>
+			<name>idCategoria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>comboEstados</name>
+		<tagclass>etiquetas.ComboEstadosTag</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>Muestra las opciones del combo de estado</info>
+		
+		<attribute>
+			<name>estado</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>
